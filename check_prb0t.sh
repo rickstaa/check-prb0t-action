@@ -16,6 +16,6 @@ else
 fi
 
 # Set output and environment variable.
-echo "used_prb0t=${used_prbot}" >> $GITHUB_OUTPUT
-echo "USED_PRB0T=${used_prbot}" >> $GITHUB_ENV
+echo "used_prb0t=$used_prbot" >> $GITHUB_OUTPUT
+echo "USED_PRB0T=$used_prbot" >> $GITHUB_ENV
 exit 0
