@@ -19,7 +19,7 @@ jobs:
         id: prb0t_check
 
       # Print results
-      - run:
+      - run: |
           echo "PRB0t used: ${{ steps.tests.outputs.used_prb0t }}"
 ```
 
