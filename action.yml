@@ -1,0 +1,12 @@
+# action.yml
+name: "Used PRB0T action"
+description: "Action which checked if a PR used the PRB0T service."
+author: "Rick Staa"
+branding:
+  icon: "eye"
+  color: "blue"
+runs:
+  using: "composite"
+  steps:
+    - run: $GITHUB_ACTION_PATH/check_prb0t.sh
+      shell: bash
