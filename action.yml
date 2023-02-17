@@ -5,8 +5,15 @@ author: "Rick Staa"
 branding:
   icon: "eye"
   color: "blue"
+
+outputs:
+  used_prb0t:
+    description: 'Whether prb0t was used.'
+    value: ${{ steps.prb0t_check.outputs.used_prb0t }}
+    
 runs:
   using: "composite"
   steps:
     - run: $GITHUB_ACTION_PATH/check_prb0t.sh
+      id: prb0t_check
       shell: bash
