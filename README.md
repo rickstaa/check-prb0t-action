@@ -8,19 +8,24 @@ Simple GitHub action that can be used to check whether a PR was created using th
 ```yml
 name: PRB0t check action
 on: [pull_request]
+
 jobs:
   prB0t_check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      # Check whether PRB0T was used
-      - uses: rickstaa/used_prb0t_action@v1
+      # Check whether PRB0T was used.
+      - uses: rickstaa/check-prb0t-action@v1
         id: prb0t_check
 
-      # Print results
+      # Print result using the env variable.
+      -  run: |
+          echo "PRB0t used: ${{ env.USED_PRB0T }}"
+
+      # Print result using the action output.
       - run: |
-          echo "PRB0t used: ${{ steps.tests.outputs.used_prb0t }}"
+          echo "PRB0t used: ${{ steps.prb0t_check.outputs.used_prb0t }}"
 ```
 
 ## Inputs
