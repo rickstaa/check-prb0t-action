@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Check if PRB0T is in the list of authors.
-if [[ $GITHUB_ACTOR =~ "PRb0t" ]]; then
+if [[ $GITHUB_ACTOR =~ "PRB0t" ]]; then
     used_prbot="true"
-    echo "Pull request was created using PRb0t."
+    echo "Pull request was created using PRB0t."
 else
     used_prbot="false"
-    echo "Pull request was not created using PRb0t."
+    echo "Pull request was not created using PRB0t."
 fi
 
 # Set output and environment variable.
