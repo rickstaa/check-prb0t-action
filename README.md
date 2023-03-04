@@ -2,18 +2,17 @@
 
 Simple GitHub action that can be used to check whether a PR was created using the [PRB0t](https://github.com/PRB0t/PRB0t) PR anonymiser.
 
-- [Check PRB0t action](#check-prb0t-action)
-  - [QuickStart](#quickstart)
-  - [Inputs](#inputs)
-  - [Outputs](#outputs)
-    - [`used_prb0t`](#used_prb0t)
-  - [Environment variables](#environment-variables)
-    - [`USED_PRBOT`](#used_prbot)
-  - [Use-cases](#use-cases)
-    - [Automatically close pull requests](#automatically-close-pull-requests)
-      - [Close if used](#close-if-used)
-      - [Close if not used](#close-if-not-used)
-  - [Contributing](#contributing)
+- [QuickStart](#quickstart)
+- [Inputs](#inputs)
+- [Outputs](#outputs)
+  - [`used_prb0t`](#used_prb0t)
+- [Environment variables](#environment-variables)
+  - [`USED_PRBOT`](#used_prbot)
+- [Use-cases](#use-cases)
+  - [Automatically close pull requests](#automatically-close-pull-requests)
+    - [Close if used](#close-if-used)
+    - [Close if not used](#close-if-not-used)
+- [Contributing](#contributing)
 
 ## QuickStart
 
